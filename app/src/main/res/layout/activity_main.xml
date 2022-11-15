@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/atick"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="364dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="37dp"
+        android:text="Этикет это"
+        android:textSize="16sp"
+        android:onClick="btnAstatick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/vidatick"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Этикет путешествий"
+        android:onClick="btnPut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="63dp"
+        android:onClick="btnGr"
+        android:text="Общегражданский этикет"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:text="Дипломатический этикет"
+        android:onClick="btnDip"
+        app:layout_constraintEnd_toStartOf="@+id/button13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Корпоративный этикет"
+        android:onClick="btnKorp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:text="Присутственный этикет"
+        android:onClick="btnPris"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:text="Брачный этикет "
+        android:onClick="btnBrak"
+        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:text="Печальный этикет"
+        android:onClick="btnPech"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Религиозный этикет"
+        android:onClick="btnRel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Гендерный этикет"
+        android:onClick="btnGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:text="Светский или социальный этикет"
+        android:onClick="btnSoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Деловой этикет"
+        android:onClick="btnDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:textSize="13sp"
+        android:text="Спортивный этикет"
+        android:onClick="btnSport"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="btnSer"
+        android:text="Этикет сервиса"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:text="Воинский этикет"
+        android:textSize="13sp"
+        android:onClick="btnVoin"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
